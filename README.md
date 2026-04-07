@@ -11,6 +11,19 @@ Before downloading and using the assets, please follow these simple rules to kee
 
 ---
 
+## 🎨 Brand Colors
+
+Our core identity relies on a distinct and vibrant color palette. Use these colors for all SPZ Race Core materials, applying the primary orange for accents, buttons, and high-visibility elements.
+
+| Color | Name | Hex Code | Output |
+| :---: | :--- | :---: | :---: |
+| 1 | **Main Orange** | `#FF6200` | ![](https://placehold.co/100x30/FF6200/FF6200.png) |
+| 2 | **Secondary Orange** | `#FF9F63` | ![](https://placehold.co/100x30/FF9F63/FF9F63.png) |
+| 3 | **Black** | `#000000` | ![](https://placehold.co/100x30/000000/000000.png) |
+| 4 | **White** | `#FFFFFF` | ![](https://placehold.co/100x30/FFFFFF/FFFFFF.png) |
+
+---
+
 ## 🖼 Logos (Raster & Vector)
 
 These are our primary logos in varying formats. You can view the PNG raster previews below or download the corresponding scalable vector (SVG) format for high-resolution print or web design use.
