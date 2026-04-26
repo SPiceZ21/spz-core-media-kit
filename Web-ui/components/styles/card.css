@@ -1,0 +1,27 @@
+/* SPZ UI — Card */
+.spz-card {
+  background: var(--spz-surface-1);
+  border: 1px solid var(--spz-line);
+  border-radius: var(--spz-radius-3);
+  padding: 16px;
+  box-shadow: var(--spz-shadow-1);
+}
+.spz-card[data-armed="true"] {
+  box-shadow: var(--spz-shadow-1), var(--spz-shadow-glow-soft);
+}
+.spz-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.spz-card-title {
+  font-family: var(--spz-font-display);
+  font-weight: 600;
+  font-size: var(--spz-text-md);
+  letter-spacing: var(--spz-track-tight);
+  color: var(--spz-fg-1);
+  margin: 0;
+}
+.spz-card-desc { color: var(--spz-fg-3); font-size: var(--spz-text-sm); }

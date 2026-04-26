@@ -1,0 +1,19 @@
+/* SPZ UI — Live indicator */
+.spz-live {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--spz-font-mono); font-size: var(--spz-text-xs);
+  letter-spacing: var(--spz-track-xwide); text-transform: uppercase;
+  color: var(--spz-fg-1); font-weight: 600;
+}
+.spz-live::before {
+  content: ""; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--spz-danger);
+  animation: spz-pulse 1.6s var(--spz-ease-out) infinite;
+}
+.spz-live[data-color="orange"]::before  { background: var(--spz-orange); }
+.spz-live[data-color="success"]::before { background: var(--spz-success); }
+@keyframes spz-pulse {
+  0%   { box-shadow: 0 0 0 0 currentColor; opacity: 1; }
+  70%  { box-shadow: 0 0 0 6px transparent; opacity: 0.7; }
+  100% { box-shadow: 0 0 0 0 transparent; opacity: 1; }
+}

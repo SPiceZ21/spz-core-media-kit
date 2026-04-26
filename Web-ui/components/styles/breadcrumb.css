@@ -1,0 +1,6 @@
+/* SPZ UI — Breadcrumb */
+.spz-breadcrumb { display: inline-flex; align-items: center; gap: 6px; font-size: var(--spz-text-sm); }
+.spz-breadcrumb a { color: var(--spz-fg-3); text-decoration: none; transition: color var(--spz-dur-1) var(--spz-ease-out); }
+.spz-breadcrumb a:hover { color: var(--spz-fg-1); }
+.spz-breadcrumb-sep     { color: var(--spz-fg-4); }
+.spz-breadcrumb-current { color: var(--spz-fg-1); }

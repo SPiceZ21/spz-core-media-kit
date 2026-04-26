@@ -1,0 +1,60 @@
+/* SPZ UI — Switch / Checkbox / Radio */
+
+/* Switch */
+.spz-switch {
+  --_w: 30px; --_h: 18px; --_p: 2px;
+  position: relative;
+  width: var(--_w); height: var(--_h);
+  background: var(--spz-surface-3);
+  border: 1px solid var(--spz-line);
+  border-radius: var(--spz-radius-pill);
+  cursor: pointer;
+  transition: background var(--spz-dur-2) var(--spz-ease-out), border-color var(--spz-dur-2) var(--spz-ease-out);
+  flex-shrink: 0;
+}
+.spz-switch::after {
+  content: "";
+  position: absolute;
+  top: var(--_p); left: var(--_p);
+  width: calc(var(--_h) - var(--_p) * 2 - 2px);
+  height: calc(var(--_h) - var(--_p) * 2 - 2px);
+  background: var(--spz-fg-2);
+  border-radius: 50%;
+  transition: transform var(--spz-dur-2) var(--spz-ease-snap), background var(--spz-dur-2) var(--spz-ease-out);
+}
+.spz-switch[data-on="true"] { background: var(--spz-orange); border-color: var(--spz-orange); }
+.spz-switch[data-on="true"]::after { transform: translateX(calc(var(--_w) - var(--_h))); background: #0a0a0a; }
+
+/* Checkbox */
+.spz-checkbox {
+  width: 14px; height: 14px;
+  background: var(--spz-surface-1);
+  border: 1px solid var(--spz-line-strong);
+  border-radius: 3px;
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer; flex-shrink: 0;
+  transition: background var(--spz-dur-2) var(--spz-ease-out), border-color var(--spz-dur-2) var(--spz-ease-out);
+}
+.spz-checkbox[data-on="true"] { background: var(--spz-orange); border-color: var(--spz-orange); }
+.spz-checkbox[data-on="true"]::after {
+  content: "";
+  width: 8px; height: 5px;
+  border-left: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Radio */
+.spz-radio {
+  width: 14px; height: 14px;
+  border: 1px solid var(--spz-line-strong);
+  border-radius: 50%;
+  background: var(--spz-surface-1);
+  cursor: pointer; flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: border-color var(--spz-dur-2) var(--spz-ease-out);
+}
+.spz-radio[data-on="true"] { border-color: var(--spz-orange); }
+.spz-radio[data-on="true"]::after {
+  content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--spz-orange);
+}

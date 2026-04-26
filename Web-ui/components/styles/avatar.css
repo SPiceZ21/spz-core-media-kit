@@ -1,0 +1,12 @@
+/* SPZ UI — Avatar */
+.spz-avatar {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--spz-surface-3);
+  border: 1px solid var(--spz-line);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--spz-font-mono); font-weight: 600; font-size: 11px;
+  color: var(--spz-fg-2);
+  overflow: hidden;
+  flex-shrink: 0;
+}

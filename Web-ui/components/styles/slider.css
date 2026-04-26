@@ -1,0 +1,23 @@
+/* SPZ UI — Slider */
+.spz-slider {
+  position: relative; height: 18px; cursor: pointer; user-select: none;
+}
+.spz-slider-track {
+  position: absolute; top: 50%; left: 0; right: 0; height: 4px;
+  transform: translateY(-50%);
+  background: var(--spz-surface-3);
+  border-radius: var(--spz-radius-pill);
+  overflow: hidden;
+}
+.spz-slider-fill {
+  position: absolute; top: 0; left: 0; bottom: 0;
+  background: var(--spz-orange);
+}
+.spz-slider-thumb {
+  position: absolute; top: 50%; transform: translate(-50%, -50%);
+  width: 14px; height: 14px;
+  background: var(--spz-fg-1);
+  border: 2px solid var(--spz-orange);
+  border-radius: 50%;
+  box-shadow: var(--spz-shadow-1);
+}

@@ -1,0 +1,31 @@
+/* SPZ UI — Utilities: divider, tooltip, scrollbar, grid background */
+
+/* Divider */
+.spz-divider { height: 1px; background: var(--spz-line); border: 0; margin: 12px 0; }
+.spz-divider[data-vertical] { width: 1px; height: 100%; margin: 0 12px; }
+
+/* Tooltip */
+.spz-tooltip {
+  position: absolute;
+  padding: 4px 8px;
+  background: var(--spz-surface-4);
+  border: 1px solid var(--spz-line-strong);
+  border-radius: var(--spz-radius-2);
+  font-size: var(--spz-text-xs); color: var(--spz-fg-1);
+  box-shadow: var(--spz-shadow-2);
+  pointer-events: none; white-space: nowrap;
+}
+
+/* Grid background helper */
+.spz-grid-bg {
+  background-image:
+    linear-gradient(to right, var(--spz-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--spz-grid-line) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: var(--spz-surface-3); border-radius: 4px; }
+*::-webkit-scrollbar-thumb:hover { background: var(--spz-surface-4); }

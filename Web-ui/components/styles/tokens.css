@@ -1,0 +1,78 @@
+/* SPZ UI — design tokens. Self-contained: no external imports. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/panchang");
+
+:root {
+  /* ── Surfaces ── */
+  --spz-bg:        #07080A;
+  --spz-surface-1: #0E1014;
+  --spz-surface-2: #14171C;
+  --spz-surface-3: #1B1F26;
+  --spz-surface-4: #242932;
+
+  /* ── Borders ── */
+  --spz-line:        rgba(255,255,255,0.07);
+  --spz-line-faint:  rgba(255,255,255,0.04);
+  --spz-line-strong: rgba(255,255,255,0.13);
+  --spz-grid-line:   rgba(255,255,255,0.04);
+
+  /* ── Foreground ── */
+  --spz-fg-1: #F0F2F5;
+  --spz-fg-2: #A8AEBB;
+  --spz-fg-3: #5C6370;
+  --spz-fg-4: #3A3F4A;
+
+  /* ── Brand / accent ── */
+  --spz-orange:      #FF6200;
+  --spz-orange-soft: #FF9F63;
+  --spz-orange-deep: #D14E00;
+
+  /* ── Semantic ── */
+  --spz-success: #29D398;
+  --spz-warning: #FFB020;
+  --spz-danger:  #FF3D55;
+  --spz-purple:  #B66BFF;
+  --spz-info:    #4DA8FF;
+
+  /* ── Typography ── */
+  --spz-font-display: 'Panchang', 'Inter', sans-serif;
+  --spz-font-body:    'Inter', system-ui, sans-serif;
+  --spz-font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  --spz-text-xs:   11px;
+  --spz-text-sm:   12px;
+  --spz-text-base: 13px;
+  --spz-text-md:   15px;
+  --spz-text-lg:   18px;
+  --spz-text-xl:   22px;
+
+  --spz-leading-base: 1.45;
+  --spz-leading-tight: 1.05;
+
+  --spz-track-tight: -0.02em;
+  --spz-track-wide:  0.06em;
+  --spz-track-xwide: 0.14em;
+
+  /* ── Radius ── */
+  --spz-radius-1:   2px;
+  --spz-radius-2:   4px;
+  --spz-radius-3:   6px;
+  --spz-radius-4:   8px;
+  --spz-radius-lg:  12px;
+  --spz-radius-xl:  16px;
+  --spz-radius-pill: 9999px;
+
+  /* ── Shadows ── */
+  --spz-shadow-1: 0 1px 3px rgba(0,0,0,0.5);
+  --spz-shadow-2: 0 4px 12px rgba(0,0,0,0.5);
+  --spz-shadow-3: 0 8px 24px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.4);
+  --spz-shadow-glow-soft: 0 0 12px rgba(255,98,0,0.25), 0 0 0 1px rgba(255,98,0,0.15);
+
+  /* ── Motion ── */
+  --spz-dur-1: 80ms;
+  --spz-dur-2: 140ms;
+  --spz-dur-3: 260ms;
+  --spz-ease-out:  cubic-bezier(0, 0, 0.2, 1);
+  --spz-ease-in:   cubic-bezier(0.4, 0, 1, 1);
+  --spz-ease-snap: cubic-bezier(0.16, 1, 0.3, 1);
+}

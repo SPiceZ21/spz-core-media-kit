@@ -1,0 +1,23 @@
+/* SPZ UI — Badge */
+.spz-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: var(--spz-radius-2);
+  font-family: var(--spz-font-mono);
+  font-size: var(--spz-text-xs);
+  font-weight: 500;
+  letter-spacing: var(--spz-track-wide);
+  text-transform: uppercase;
+  background: var(--spz-surface-3);
+  color: var(--spz-fg-2);
+  border: 1px solid var(--spz-line);
+}
+.spz-badge[data-variant="orange"]  { background: rgba(255,98,0,0.12);   color: var(--spz-orange);  border-color: rgba(255,98,0,0.3); }
+.spz-badge[data-variant="success"] { background: rgba(41,211,152,0.10); color: var(--spz-success); border-color: rgba(41,211,152,0.3); }
+.spz-badge[data-variant="warn"]    { background: rgba(255,176,32,0.10); color: var(--spz-warning); border-color: rgba(255,176,32,0.3); }
+.spz-badge[data-variant="danger"]  { background: rgba(255,61,85,0.10);  color: var(--spz-danger);  border-color: rgba(255,61,85,0.3); }
+.spz-badge[data-variant="purple"]  { background: rgba(182,107,255,0.10);color: var(--spz-purple);  border-color: rgba(182,107,255,0.3); }
+.spz-badge[data-variant="solid"]   { background: var(--spz-orange); color: #0a0a0a; border-color: var(--spz-orange); font-weight: 700; }

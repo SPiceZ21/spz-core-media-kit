@@ -1,0 +1,12 @@
+/* SPZ UI — Table */
+.spz-table { width: 100%; border-collapse: collapse; font-size: var(--spz-text-base); }
+.spz-table th {
+  text-align: left; padding: 8px 12px;
+  font-family: var(--spz-font-mono); font-size: var(--spz-text-xs);
+  font-weight: 500; letter-spacing: var(--spz-track-xwide); text-transform: uppercase;
+  color: var(--spz-fg-3); border-bottom: 1px solid var(--spz-line); white-space: nowrap;
+}
+.spz-table td { padding: 10px 12px; border-bottom: 1px solid var(--spz-line-faint); color: var(--spz-fg-2); vertical-align: middle; }
+.spz-table tbody tr { transition: background var(--spz-dur-1) var(--spz-ease-out); }
+.spz-table tbody tr:hover { background: var(--spz-surface-1); }
+.spz-table tbody tr[data-selected="true"] { background: var(--spz-surface-2); }

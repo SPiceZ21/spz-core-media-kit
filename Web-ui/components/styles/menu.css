@@ -1,0 +1,22 @@
+/* SPZ UI — Dropdown menu + Popover */
+.spz-popover {
+  background: var(--spz-surface-2);
+  border: 1px solid var(--spz-line-strong);
+  border-radius: var(--spz-radius-3);
+  box-shadow: var(--spz-shadow-3);
+  padding: 6px;
+  min-width: 200px;
+}
+.spz-menu-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 8px; border-radius: var(--spz-radius-2);
+  color: var(--spz-fg-2); font-size: var(--spz-text-base);
+  cursor: pointer;
+  transition: background var(--spz-dur-1) var(--spz-ease-out), color var(--spz-dur-1) var(--spz-ease-out);
+  user-select: none;
+}
+.spz-menu-item:hover { background: var(--spz-surface-3); color: var(--spz-fg-1); }
+.spz-menu-item .lucide { width: 14px; height: 14px; stroke-width: 1.75; }
+.spz-menu-item-shortcut { margin-left: auto; color: var(--spz-fg-3); font-family: var(--spz-font-mono); font-size: 11px; }
+.spz-menu-divider { height: 1px; background: var(--spz-line); margin: 4px 0; }
+.spz-menu-label { padding: 6px 8px 4px; color: var(--spz-fg-3); font-family: var(--spz-font-mono); font-size: 10px; letter-spacing: var(--spz-track-xwide); text-transform: uppercase; }

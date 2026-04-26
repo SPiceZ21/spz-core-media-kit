@@ -1,0 +1,16 @@
+/* SPZ UI — Alert */
+.spz-alert {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 10px 12px;
+  background: var(--spz-surface-1);
+  border: 1px solid var(--spz-line);
+  border-radius: var(--spz-radius-3);
+}
+.spz-alert[data-variant="info"]    .lucide { color: var(--spz-info); }
+.spz-alert[data-variant="success"] .lucide { color: var(--spz-success); }
+.spz-alert[data-variant="warn"]    .lucide { color: var(--spz-warning); }
+.spz-alert[data-variant="danger"]  .lucide { color: var(--spz-danger); }
+.spz-alert[data-variant="brand"]   .lucide { color: var(--spz-orange); }
+.spz-alert-title { font-weight: 600; color: var(--spz-fg-1); font-size: var(--spz-text-base); margin: 0 0 2px; }
+.spz-alert-desc  { color: var(--spz-fg-3); font-size: var(--spz-text-sm); margin: 0; }
+.spz-alert .lucide { width: 16px; height: 16px; stroke-width: 1.75; flex-shrink: 0; margin-top: 1px; }

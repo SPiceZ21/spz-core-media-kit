@@ -1,0 +1,12 @@
+/* SPZ UI — Progress */
+.spz-progress {
+  position: relative; height: 4px;
+  background: var(--spz-surface-3);
+  border-radius: var(--spz-radius-pill);
+  overflow: hidden;
+}
+.spz-progress-fill {
+  position: absolute; inset: 0;
+  background: var(--spz-orange);
+  transition: width var(--spz-dur-3) var(--spz-ease-out);
+}

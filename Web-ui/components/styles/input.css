@@ -1,0 +1,38 @@
+/* SPZ UI — Input / Textarea / Select / Field */
+.spz-input,
+.spz-textarea,
+.spz-select {
+  width: 100%;
+  height: 32px;
+  padding: 0 10px;
+  background: var(--spz-surface-1);
+  border: 1px solid var(--spz-line);
+  border-radius: var(--spz-radius-3);
+  color: var(--spz-fg-1);
+  font-family: var(--spz-font-body);
+  font-size: var(--spz-text-base);
+  transition:
+    border-color var(--spz-dur-2) var(--spz-ease-out),
+    background var(--spz-dur-2) var(--spz-ease-out);
+}
+.spz-textarea {
+  height: auto;
+  min-height: 80px;
+  padding: 8px 10px;
+  resize: vertical;
+  line-height: var(--spz-leading-base);
+}
+.spz-input::placeholder, .spz-textarea::placeholder { color: var(--spz-fg-3); }
+.spz-input:hover, .spz-textarea:hover, .spz-select:hover { border-color: var(--spz-line-strong); }
+.spz-input:focus, .spz-textarea:focus, .spz-select:focus {
+  outline: none;
+  border-color: var(--spz-orange);
+  background: var(--spz-surface-2);
+}
+.spz-input:disabled, .spz-textarea:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.spz-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

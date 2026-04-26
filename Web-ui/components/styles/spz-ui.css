@@ -1,0 +1,20 @@
+/* SPZ UI — stylesheet barrel. Import this single file to get everything. */
+@import "./tokens.css";
+@import "./base.css";
+@import "./button.css";
+@import "./input.css";
+@import "./card.css";
+@import "./badge.css";
+@import "./kbd.css";
+@import "./controls.css";
+@import "./slider.css";
+@import "./progress.css";
+@import "./tabs.css";
+@import "./avatar.css";
+@import "./alert.css";
+@import "./breadcrumb.css";
+@import "./live.css";
+@import "./toast.css";
+@import "./table.css";
+@import "./menu.css";
+@import "./utilities.css";

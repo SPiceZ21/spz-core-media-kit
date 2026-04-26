@@ -1,0 +1,40 @@
+/* SPZ UI — Tabs + Segmented control */
+
+/* Tabs */
+.spz-tabs { border-bottom: 1px solid var(--spz-line); display: flex; }
+.spz-tab {
+  position: relative;
+  padding: 8px 14px;
+  background: transparent; border: none;
+  color: var(--spz-fg-3);
+  font-family: var(--spz-font-body);
+  font-size: var(--spz-text-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color var(--spz-dur-2) var(--spz-ease-out);
+  margin-bottom: -1px;
+}
+.spz-tab:hover { color: var(--spz-fg-1); }
+.spz-tab[data-active="true"] { color: var(--spz-fg-1); border-bottom: 1px solid var(--spz-orange); }
+
+/* Segment */
+.spz-segment {
+  display: inline-flex;
+  background: var(--spz-surface-1);
+  border: 1px solid var(--spz-line);
+  border-radius: var(--spz-radius-3);
+  padding: 2px;
+}
+.spz-segment-item {
+  padding: 4px 10px;
+  background: transparent; border: none;
+  border-radius: var(--spz-radius-2);
+  color: var(--spz-fg-3);
+  font-family: var(--spz-font-body);
+  font-size: var(--spz-text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--spz-dur-2) var(--spz-ease-out);
+}
+.spz-segment-item:hover { color: var(--spz-fg-1); }
+.spz-segment-item[data-active="true"] { background: var(--spz-surface-3); color: var(--spz-fg-1); box-shadow: var(--spz-shadow-1); }

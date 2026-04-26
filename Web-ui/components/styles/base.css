@@ -1,0 +1,82 @@
+/* SPZ UI — base reset + typography scale */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  background: var(--spz-bg);
+  color: var(--spz-fg-1);
+  font-family: var(--spz-font-body);
+  font-size: var(--spz-text-base);
+  line-height: var(--spz-leading-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--spz-orange); color: #000; }
+
+/* Typography classes */
+.spz-display {
+  font-family: var(--spz-font-display);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: var(--spz-leading-tight);
+  letter-spacing: var(--spz-track-tight);
+  color: var(--spz-fg-1);
+  text-transform: uppercase;
+}
+.spz-h1 {
+  font-family: var(--spz-font-display);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: var(--spz-leading-tight);
+  letter-spacing: var(--spz-track-tight);
+  color: var(--spz-fg-1);
+  margin: 0;
+}
+.spz-h2 {
+  font-family: var(--spz-font-display);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: var(--spz-track-tight);
+  color: var(--spz-fg-1);
+  margin: 0;
+}
+.spz-h3 {
+  font-family: var(--spz-font-display);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--spz-fg-1);
+  margin: 0;
+}
+.spz-eyebrow {
+  font-family: var(--spz-font-mono);
+  font-size: var(--spz-text-xs);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--spz-fg-3);
+}
+.spz-body {
+  font-family: var(--spz-font-body);
+  font-size: var(--spz-text-base);
+  line-height: var(--spz-leading-base);
+  color: var(--spz-fg-2);
+  margin: 0;
+}
+.spz-mono {
+  font-family: var(--spz-font-mono);
+  font-size: var(--spz-text-sm);
+  font-variant-numeric: tabular-nums;
+}
+.spz-label {
+  font-family: var(--spz-font-mono);
+  font-size: var(--spz-text-xs);
+  font-weight: 500;
+  letter-spacing: var(--spz-track-xwide);
+  text-transform: uppercase;
+  color: var(--spz-fg-3);
+}
+.spz-helper { font-size: var(--spz-text-xs); color: var(--spz-fg-3); }
